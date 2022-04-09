@@ -1,0 +1,46 @@
+/*desktop and large screens*/
+@media screen and (min-width: 1024px){
+  .help-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*tablet landscape*/
+@media screen and (min-width: 480px) and (max-width: 1024px){
+  .help-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*phone*/
+@media screen and (max-width: 480px){
+  .help-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.help-grid-item{
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  margin: 5%;
+}
+
+.help-grid-item-text{
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+}
+
+.help-grid-item-icon{
+  position: absolute;
+  right: 2%;
+  top: 42%;
+}
+
+.help-grid-item-image{
+  width: 75px;
+  height: 75px;
+}

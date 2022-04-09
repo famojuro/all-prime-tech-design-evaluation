@@ -1,0 +1,182 @@
+/*desktop and large screens*/
+@media screen and (min-width: 1024px){
+
+  .home{
+    display: grid;
+    grid-template-columns: 3fr 20fr;
+  }
+
+  .navigation-bar{
+    width: 15vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    background-color: whitesmoke;
+  }
+
+  .viewport{
+    width: 83vw !important;
+    height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1%;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  }
+
+  .navigation-link{
+    height: 8vh;
+    margin: 2.5px;
+    /*background-color: white;*/
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+  }
+
+  .nav-link-text{
+    display: flex;
+    align-items: center;
+  }
+
+  .selected-link.navigation-link{
+    color: blue;
+  }
+
+  .link-image{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .device{
+    width: 25%;
+    height: 25%;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    cursor: pointer;
+  }
+
+  .bluetooth-icon{
+    width: 100%;
+    height: 100%;
+    /*object-fit: scale-down;*/
+  }
+
+  .device-details{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 5fr;
+    /*display: flex;*/
+    /*flex-flow: column;*/
+  }
+}
+
+/*tablet landscape*/
+@media screen and (min-width: 480px) and (max-width: 1024px){
+  .home{
+    display: flex;
+    flex-flow: column-reverse;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .navigation-bar{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 10vh;
+  }
+
+  .navigation-link{
+    height: 8vh;
+    margin: 2.5px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 8fr 2fr;
+  }
+
+  .nav-link-text{
+    display: flex;
+    justify-content: center;
+  }
+
+  .selected-link.navigation-link{
+    color: blue;
+  }
+
+  .link-image{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .viewport{
+    padding: 1%;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+  }
+
+  .device{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    cursor: pointer;
+  }
+}
+
+/*phone*/
+@media screen and (max-width: 480px){
+  .home{
+    height: 100vh;
+    position: relative;
+  }
+
+  .cont{
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .navigation-bar{
+    position: absolute;
+    bottom: 0 !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: whitesmoke;
+  }
+
+  .navigation-link{
+    height: 8vh;
+    margin: 2.5px;
+    display: grid;
+    grid-template-rows: 8fr 2fr;
+  }
+
+  .nav-link-text{
+    display: flex;
+    justify-content: center;
+  }
+
+  .selected-link.navigation-link{
+    color: blue;
+  }
+
+  .link-image{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+
+  .device{
+    width: 380px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    cursor: pointer;
+  }
+}

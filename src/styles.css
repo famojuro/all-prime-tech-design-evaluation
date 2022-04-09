@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/*desktop*/
+/*@media screen and (min-width: 1024px){*/
+/*  .mud{*/
+/*    background-color: red;*/
+/*  }*/
+/*}*/
+
+/*!*tablet landscape*!*/
+/*@media screen and (min-width: 768px) and (max-width: 1024px){*/
+/*  .mud{*/
+/*    background-color: orange;*/
+/*  }*/
+/*}*/
+
+/*!*tablet portrait*!*/
+/*@media screen and (min-width: 480px) and (max-width: 768px){*/
+/*  .mud{*/
+/*    background-color: yellow;*/
+/*  }*/
+/*}*/
+
+/*!*phone*!*/
+/*@media screen and (max-width: 480px){*/
+/*  .mud{*/
+/*    background-color: blue;*/
+/*  }*/
+/*}*/
+
